@@ -1,0 +1,31 @@
+<html>
+<script src="js_config.min.js"></script>
+<script>
+
+  config = {
+    'default': {
+      'urls': {
+        'login': "https://%{domain}/users/sign_in"
+      }
+    },
+    'development': {
+      'domain': "example.dev",
+      'log_level': "debug"
+    },
+    'staging': {
+      'domain': "staging.example.com",
+      'log_level': "info"
+    },
+    'production': {
+      'domain': "example.com",
+      'log_level': "none"
+    }
+  }
+
+  CONFIG = Config.init(config, 'production')
+
+  console.log(  "CONFIG['urls']['login'] =", CONFIG['urls']['login']  )
+  console.log(  "CONFIG['log_level']     =", CONFIG['log_level']      )
+
+</script>
+</html>
