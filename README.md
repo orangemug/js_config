@@ -45,4 +45,5 @@ Then run `init` the config with an enviroment. The `default` will be inherited b
 
 To build simply run the following from a unix environment, make sure you have [coffeescript](http://coffeescript.org) installed
 
-   ./build.sh 
+    ./build.sh
+
