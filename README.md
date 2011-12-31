@@ -1,6 +1,6 @@
 # js_config
 
-A simple javascript config parser.
+A simple javascript config library.
 
 ## Usage
 
